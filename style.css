@@ -1,0 +1,113 @@
+/* EX 1
+.container-1 {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item {
+    text-align: center;
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+*/
+
+/* EX 2
+.container-2 {
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px 100px 200px;
+}
+
+.item {
+    text-align: center;
+    background-color: deepskyblue;
+
+    /*grid-column-start: 1;
+    grid-column-end: span 3;
+
+    grid-column: 1 / 4;
+
+    /*grid-row-start: 2;
+    grid-row-end: span 2;
+
+    grid-row: span 2;
+}
+*/
+
+/* EX 3
+.container-3 {
+    border: 2px solid;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.item {
+    text-align: center;
+    background-color: deeppink;
+    
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    /*grid-column: 2 / 3;
+    /*grid-row: 2 / 3;
+}
+*/
+
+/* EX 4
+.container-4 {
+    border: 2px solid;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.item {
+    text-align: center;
+    background-color: deeppink;
+    
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+
+    /*grid-column: 3 / span 1;
+    /*grid-row: 2 / span 1;
+
+}
+*/
+
+.container-5 {
+    border: 2px solid;
+    display: grid;
+
+    grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+    grid-template-rows: [linha-inicio] 100px [linha-meio] 100px [linha-fim];
+}
+
+.item {
+    text-align: center;
+    background-color: deeppink;
+    
+}
+
+.selected {
+    background-color: aqua;
+    grid-column: segunda-linha-col / terceira-linha-col;
+    grid-row: linha-meio / linha-fim;
+}
